@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiskController : MonoBehaviour {
 
-    // 回転速度
-    private float rotSpeed = 1.0f;
+
+public class KaitenDaiController : MonoBehaviour {
+
+    [SerializeField]
+    private float rotSpeed = 1.0f;  //回転速度
+
     Rigidbody rg;
 
     // Use this for initialization
     void Start () {
         rg = GetComponent<Rigidbody>();
-
     }
 	
 	// Update is called once per frame

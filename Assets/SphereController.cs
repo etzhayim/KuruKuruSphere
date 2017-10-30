@@ -6,11 +6,16 @@ public class SphereController : MonoBehaviour {
 
     private Rigidbody myRigidbody;
     private float moveForce = 10.0f;
+    private float jumpForce = 10.0f;
+    private bool locomotion = false;
 
-	// Use this for initialization
-	void Start () {
+    private GameObject FlugCheck;
+
+    // Use this for initialization
+    void Start () {
         this.myRigidbody = GetComponent<Rigidbody>();
-	}
+        this.FlugCheck = GameObject.Find("FlugCheck");
+}
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,24 +35,34 @@ public class SphereController : MonoBehaviour {
         {
             this.myRigidbody.AddForce(0, 0, -moveForce, ForceMode.Acceleration);
         }
+        if (Input.GetKey(KeyCode.Space) && locomotion == true)
+        {
+            this.myRigidbody.AddForce(0, jumpForce, 0, ForceMode.VelocityChange);
+            this.FlugCheck.GetComponent<DebugText>().check = false;
+            locomotion = false;
+        }
     }
     
     void OnCollisionEnter(Collision other)
     {
-        if (transform.parent == null && other.gameObject.tag == "MoveStage")
-        {
-            var emptyObject = new GameObject();
-            emptyObject.transform.parent = other.gameObject.transform;
-            transform.parent = emptyObject.transform;
-        }
+        //if (transform.parent == null && other.gameObject.tag == "MoveStage")
+        //{
+            //var emptyObject = new GameObject();
+            //emptyObject.transform.parent = other.gameObject.transform;
+            //transform.parent = emptyObject.transform;
+            this.FlugCheck.GetComponent<DebugText>().check = true;
+        locomotion = true;
+        //}
     }
 
     void OnCollisionExit(Collision other)
     {
-        if (transform.parent != null && other.gameObject.tag == "MoveStage")
-        {
-            transform.parent = null;
-        }
+        //if (transform.parent != null && other.gameObject.tag == "MoveStage")
+        //{
+        //    transform.parent = null;
+            this.FlugCheck.GetComponent<DebugText>().check = false;
+        locomotion = false;
+        //}
     }
     
 }
