@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -86,7 +86,8 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 939643c95ae4c6e48a9864a2c8214d18,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -108,6 +109,172 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &35260982
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.240382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 25.210482
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &108571496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 108571497}
+  - component: {fileID: 108571499}
+  - component: {fileID: 108571498}
+  m_Layer: 5
+  m_Name: ScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &108571497
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108571496}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1910917589}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -850, y: -40}
+  m_SizeDelta: {x: 800, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &108571498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108571496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score:     '
+--- !u!222 &108571499
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108571496}
+--- !u!1001 &148887093
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 60.35924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 33.106743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &149834556
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &149834561
 MeshCollider:
@@ -206,6 +373,402 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &192894194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 192894195}
+  - component: {fileID: 192894197}
+  - component: {fileID: 192894196}
+  m_Layer: 5
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &192894195
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192894194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1910917589}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 20, y: 10}
+  m_SizeDelta: {x: 400, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &192894196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192894194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 60
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &192894197
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192894194}
+--- !u!1001 &223965624
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 86.62947
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.45234036
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &245107366
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 77.51842
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.322659
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &327811017
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 56.259262
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.626361
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &328952981
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 26.95201
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 28.703062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &581308737
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 67.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &606838069
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 10.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &711275633
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 48.514862
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.3634458
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &714908834
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +783,7 @@ GameObject:
   - component: {fileID: 714908840}
   - component: {fileID: 714908839}
   - component: {fileID: 714908841}
+  - component: {fileID: 714908842}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -289,7 +853,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &714908839
 Rigidbody:
@@ -334,6 +898,247 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c2bfb4b7e3ed9449908a7edb606c50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &714908842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 714908834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04021e0facbad044e8043f22abe7850f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &770401534
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 78.73322
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.932724
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &801910912
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 73.11473
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 4.255043
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &936268518
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.907669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 29.310467
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &977251649
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444021319385534, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ea171775462fa004ead0f39f0657aef9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1137479451
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 90.42575
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 16.403126
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1239391075
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,8 +1199,100 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1252864292
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -16.932917
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.477165
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1366470765
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 98.17015
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.3809557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1386307721
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +1305,8 @@ GameObject:
   - component: {fileID: 1386307724}
   - component: {fileID: 1386307723}
   - component: {fileID: 1386307722}
+  - component: {fileID: 1386307727}
+  - component: {fileID: 1386307728}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -485,6 +1384,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1386307727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386307721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c6290708af4574ea0185f52283a9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1386307728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386307721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c346e971eea406468939edd453b6494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1390397738
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 36.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.59999543
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1450028018
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,13 +1515,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1507331636
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 1444021319385534, guid: ea171775462fa004ead0f39f0657aef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 977251649}
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1507331640}
@@ -564,7 +1532,7 @@ GameObject:
   - component: {fileID: 1507331638}
   - component: {fileID: 1507331642}
   m_Layer: 0
-  m_Name: KaitenDai
+  m_Name: KaitenDaiPrefab
   m_TagString: MoveStage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -573,8 +1541,9 @@ GameObject:
 --- !u!23 &1507331637
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 23556080724715942, guid: ea171775462fa004ead0f39f0657aef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 977251649}
   m_GameObject: {fileID: 1507331636}
   m_Enabled: 1
   m_CastShadows: 1
@@ -605,8 +1574,9 @@ MeshRenderer:
 --- !u!64 &1507331638
 MeshCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 64156075431517210, guid: ea171775462fa004ead0f39f0657aef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 977251649}
   m_GameObject: {fileID: 1507331636}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -619,28 +1589,31 @@ MeshCollider:
 --- !u!33 &1507331639
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 33250041332234960, guid: ea171775462fa004ead0f39f0657aef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 977251649}
   m_GameObject: {fileID: 1507331636}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1507331640
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 4206626565698166, guid: ea171775462fa004ead0f39f0657aef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 977251649}
   m_GameObject: {fileID: 1507331636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 0.3, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1507331641
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114957296749329136, guid: ea171775462fa004ead0f39f0657aef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 977251649}
   m_GameObject: {fileID: 1507331636}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -648,11 +1621,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpeed: 1
+  kaitenDaiPoint: 0
 --- !u!54 &1507331642
 Rigidbody:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 54854349178630500, guid: ea171775462fa004ead0f39f0657aef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 977251649}
   m_GameObject: {fileID: 1507331636}
   serializedVersion: 2
   m_Mass: 10
@@ -663,6 +1638,144 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 0
+--- !u!1001 &1570574230
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 38.037136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 34.62525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1623861899
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 29.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1703112365
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.474285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.780872
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1733638757
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +1863,172 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   check: 0
+--- !u!1001 &1791648751
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1811481674
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 66.88883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 23.388275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1905527636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1905527637}
+  - component: {fileID: 1905527639}
+  - component: {fileID: 1905527638}
+  m_Layer: 5
+  m_Name: TimeText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1905527637
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905527636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1910917589}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -150, y: -40}
+  m_SizeDelta: {x: 800, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1905527638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905527636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Time: 00:00'
+--- !u!222 &1905527639
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905527636}
 --- !u!1 &1910917585
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,11 +2115,60 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1733638758}
+  - {fileID: 192894195}
+  - {fileID: 108571497}
+  - {fileID: 1905527637}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &2120589124
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 49.274113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 30.069721
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997797989795262, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158407330536686, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+      propertyPath: m_Name
+      value: KaitenDaiPrefab (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 667f1820004883749a0cf0b54c96e34b, type: 2}
+  m_IsPrefabParent: 0

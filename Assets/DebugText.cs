@@ -18,7 +18,7 @@ public class DebugText : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        this.FlugCheck.GetComponent<Text>().text = check.ToString();
+        //this.FlugCheck.GetComponent<Text>().text = check.ToString();
 
 	}
 

@@ -8,12 +8,15 @@ public class KaitenDaiController : MonoBehaviour {
 
     [SerializeField]
     private float rotSpeed = 1.0f;  //回転速度
+    public int kaitenDaiPoint;
 
     Rigidbody rg;
 
     // Use this for initialization
     void Start () {
         rg = GetComponent<Rigidbody>();
+        rotSpeed = Random.Range(-2.0f, 2.0f);
+        kaitenDaiPoint = (int)(rotSpeed * rotSpeed * 1000) + 100;
     }
 	
 	// Update is called once per frame
