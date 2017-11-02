@@ -11,6 +11,9 @@ public class SphereController : MonoBehaviour {
 
     private GameObject mainCamera;
 
+    private float angVel; //角速度
+    private AudioSource sound_gnd, sound_jmp;
+    
     // ゲームオーバになる位置
     private float deadLine = -20;
     private float clearLine = -12;
@@ -19,10 +22,27 @@ public class SphereController : MonoBehaviour {
     void Start () {
         this.myRigidbody = GetComponent<Rigidbody>();
         this.mainCamera = GameObject.Find("Main Camera");
-}
+        //オーディオソースを取得
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        sound_gnd = audioSources[0];
+        sound_jmp = audioSources[1];
+        sound_gnd.volume = 0;
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        angVel = myRigidbody.angularVelocity.sqrMagnitude;
+        if (!locomotion){
+            sound_gnd.volume = 0;
+        }else {
+            //Debug.Log(angVel);
+            if (angVel > 10){
+            angVel = 10;
+            }
+            sound_gnd.volume = angVel/10/3;
+        }
+
+        // キー操作
         if (Input.GetKey(KeyCode.RightArrow))
         {
             this.myRigidbody.AddForce(moveForce, 0, 0, ForceMode.Acceleration);
@@ -43,6 +63,7 @@ public class SphereController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) && locomotion == true)
         {
             this.myRigidbody.AddForce(0, jumpForce, 0, ForceMode.VelocityChange);
+            sound_jmp.Play(); // ジャンプ音
             locomotion = false;
         }
 
@@ -66,6 +87,7 @@ public class SphereController : MonoBehaviour {
     void OnCollisionEnter(Collision other)
     {
         //設置中動作
+        sound_jmp.Play(); // 接地音＝ジャンプと同じ
         locomotion = true;
         if (other.gameObject.tag == "MoveStage"){
         //点数
