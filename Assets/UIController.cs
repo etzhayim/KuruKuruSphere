@@ -54,6 +54,7 @@ public class UIController : MonoBehaviour {
 
         //獲得した点数を表示
         if(score < score_tmp){
+            //スコアの上昇をアニメーションに
             score += 10;        
             this.scoreText.GetComponent<Text>().text = "Score " + this.score + "pt";
         }
@@ -77,16 +78,16 @@ public class UIController : MonoBehaviour {
     public void GameOver()
     {
         // ゲームオーバになったときに、画面上にゲームオーバを表示する
-        //this.gameOverText.transform.position = this.mainCamera.transform.position;
-        //this.gameOverText.transform.position += new Vector3(532, 280, 0);
         this.gameOverText.GetComponent<Text>().text = "GameOver";
-
+        // カメラワーク移動しないようにSphereを固定する
         this.sphere.constraints = RigidbodyConstraints.FreezeAll;
         this.isGameOver = true;
     }
     public void GameClear()
     {
+        //ゲームクリア画面
         this.gameOverText.GetComponent<Text>().text = "GameClear!!";
+        // カメラワーク移動しないように、KaitenDaiから落ちないようにSphereを固定する
         this.sphere.constraints = RigidbodyConstraints.FreezeAll;
         this.isGameOver = true;
     }
@@ -94,7 +95,7 @@ public class UIController : MonoBehaviour {
     public void DisplayScore(int addPoint)
     {
         score_tmp += addPoint;
-        //獲得した点数を表示
+        //獲得した点数を表示 update関数内に移動
         //this.scoreText.GetComponent<Text>().text = "Score " + this.score + "pt";
     }
 }

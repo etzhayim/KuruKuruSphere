@@ -5,12 +5,11 @@ using UnityEngine;
 public class SphereController : MonoBehaviour {
 
     private Rigidbody myRigidbody;
-    private float moveForce = 10.0f;
-    private float jumpForce = 15.0f;
-    private bool locomotion = false;
+    private float moveForce = 10.0f; //水平の移動力
+    private float jumpForce = 15.0f; //ジャンプ力
+    private bool locomotion = false; //歩きかジャンプ中の判定
 
     private GameObject mainCamera;
-    private GameObject FlugCheck;
 
     // ゲームオーバになる位置
     private float deadLine = -20;
@@ -20,7 +19,6 @@ public class SphereController : MonoBehaviour {
     void Start () {
         this.myRigidbody = GetComponent<Rigidbody>();
         this.mainCamera = GameObject.Find("Main Camera");
-        this.FlugCheck = GameObject.Find("FlugCheck");
 }
 	
 	// Update is called once per frame
@@ -41,10 +39,10 @@ public class SphereController : MonoBehaviour {
         {
             this.myRigidbody.AddForce(0, 0, -moveForce, ForceMode.Acceleration);
         }
+        //設置中のみジャンプを受け付ける
         if (Input.GetKeyDown(KeyCode.Space) && locomotion == true)
         {
             this.myRigidbody.AddForce(0, jumpForce, 0, ForceMode.VelocityChange);
-            this.FlugCheck.GetComponent<DebugText>().check = false;
             locomotion = false;
         }
 
@@ -67,6 +65,7 @@ public class SphereController : MonoBehaviour {
     
     void OnCollisionEnter(Collision other)
     {
+        //設置中動作
         locomotion = true;
         if (other.gameObject.tag == "MoveStage"){
         //点数
@@ -77,6 +76,7 @@ public class SphereController : MonoBehaviour {
 
     void OnCollisionExit(Collision other)
     {
+        // ジャンプ開始
         locomotion = false;
     }
     

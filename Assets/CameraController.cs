@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //カメラワークの設定
         delta_x = this.mainCamera.transform.position.x - this.sphere.transform.position.x;
         if(delta_x > 5)
         {

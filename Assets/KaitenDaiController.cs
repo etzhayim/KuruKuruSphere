@@ -15,14 +15,15 @@ public class KaitenDaiController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rg = GetComponent<Rigidbody>();
+        //回転スピードをランダムにする
         rotSpeed = Random.Range(-2.0f, 2.0f);
+        //KaitenDai着地時、点数を回転速度に依存させる
         kaitenDaiPoint = (int)(rotSpeed * rotSpeed * 1000) + 100;
     }
 	
 	// Update is called once per frame
 	void Update () {
         // 回転
-        //this.transform.Rotate(0, this.rotSpeed, 0);
         rg.angularVelocity = new Vector3(0, this.rotSpeed, 0);
     }
 
